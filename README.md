@@ -37,7 +37,7 @@ Tool Usage
 A practical Scenario
 ====================
 
-1] [Pen Test Machine] <----rev conn---- [Firewall] <------- [Compromised Machine]         [Destination Machine]
+1] [Pen Test Machine] <----rev conn---- [Firewall] <------- [Compromised Machine]    ?    [Destination Machine]
 
 - In this example, the penetration tester has compromised an internal network machine and has initiated a reverse connection (client mode) with pyrevtun back the the attack machine (listening mode).  The local port opens on the attack machine.
 
